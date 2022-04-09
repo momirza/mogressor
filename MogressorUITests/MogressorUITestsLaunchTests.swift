@@ -8,7 +8,6 @@
 import XCTest
 
 class MogressorUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

@@ -16,6 +16,9 @@
 		CD2AC8CC2801ACB700A30A50 /* MogressorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8CB2801ACB700A30A50 /* MogressorTests.swift */; };
 		CD2AC8D62801ACB700A30A50 /* MogressorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8D52801ACB700A30A50 /* MogressorUITests.swift */; };
 		CD2AC8D82801ACB700A30A50 /* MogressorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8D72801ACB700A30A50 /* MogressorUITestsLaunchTests.swift */; };
+		CD2AC8E62801AF1D00A30A50 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = CD2AC8E52801AF1D00A30A50 /* SwiftUICharts */; };
+		CD2AC8E92801B70C00A30A50 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8E82801B70C00A30A50 /* BluetoothManager.swift */; };
+		CD2AC8EC2801C54900A30A50 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8EB2801C54900A30A50 /* DataExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		CD2AC8D12801ACB700A30A50 /* MogressorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MogressorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2AC8D52801ACB700A30A50 /* MogressorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogressorUITests.swift; sourceTree = "<group>"; };
 		CD2AC8D72801ACB700A30A50 /* MogressorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogressorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD2AC8E82801B70C00A30A50 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		CD2AC8EA2801B98000A30A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CD2AC8EB2801C54900A30A50 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2AC8E62801AF1D00A30A50 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +105,15 @@
 		CD2AC8B42801ACB600A30A50 /* Mogressor */ = {
 			isa = PBXGroup;
 			children = (
+				CD2AC8EA2801B98000A30A50 /* Info.plist */,
 				CD2AC8B52801ACB600A30A50 /* MogressorApp.swift */,
 				CD2AC8B72801ACB600A30A50 /* ContentView.swift */,
 				CD2AC8B92801ACB700A30A50 /* Assets.xcassets */,
 				CD2AC8BE2801ACB700A30A50 /* Persistence.swift */,
 				CD2AC8C02801ACB700A30A50 /* Mogressor.xcdatamodeld */,
 				CD2AC8BB2801ACB700A30A50 /* Preview Content */,
+				CD2AC8E82801B70C00A30A50 /* BluetoothManager.swift */,
+				CD2AC8EB2801C54900A30A50 /* DataExtension.swift */,
 			);
 			path = Mogressor;
 			sourceTree = "<group>";
@@ -149,6 +159,9 @@
 			dependencies = (
 			);
 			name = Mogressor;
+			packageProductDependencies = (
+				CD2AC8E52801AF1D00A30A50 /* SwiftUICharts */,
+			);
 			productName = Mogressor;
 			productReference = CD2AC8B22801ACB600A30A50 /* Mogressor.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +234,9 @@
 				Base,
 			);
 			mainGroup = CD2AC8A92801ACB600A30A50;
+			packageReferences = (
+				CD2AC8E42801AF1D00A30A50 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = CD2AC8B32801ACB600A30A50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2AC8BF2801ACB700A30A50 /* Persistence.swift in Sources */,
+				CD2AC8EC2801C54900A30A50 /* DataExtension.swift in Sources */,
 				CD2AC8B82801ACB600A30A50 /* ContentView.swift in Sources */,
 				CD2AC8B62801ACB600A30A50 /* MogressorApp.swift in Sources */,
 				CD2AC8C22801ACB700A30A50 /* Mogressor.xcdatamodeld in Sources */,
+				CD2AC8E92801B70C00A30A50 /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +443,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mogressor/Preview Content\"";
+				DEVELOPMENT_TEAM = V36W6TUF93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mogressor/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to connect to Mo";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth to connect to Mo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,8 +475,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mogressor/Preview Content\"";
+				DEVELOPMENT_TEAM = V36W6TUF93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mogressor/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to connect to Mo";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth to connect to Mo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD2AC8E42801AF1D00A30A50 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD2AC8E52801AF1D00A30A50 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD2AC8E42801AF1D00A30A50 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CD2AC8C02801ACB700A30A50 /* Mogressor.xcdatamodeld */ = {

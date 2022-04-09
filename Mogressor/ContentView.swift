@@ -1,88 +1,67 @@
-//
-//  ContentView.swift
-//  Mogressor
-//
-//  Created by Mo Mirza on 09/04/2022.
-//
-
-import SwiftUI
 import CoreData
+import SwiftUI
+
+import SwiftUICharts
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    
+    
+    @ObservedObject var bluetooth = BluetoothManager()
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        VStack {
+            VStack {
+                HStack(alignment: .center, spacing: 10) {
+                    Text("Mogressor")
+                        .font(.title)
+                    Button("Clear") {
+                        bluetooth.data = []
+                    }
+                    Button("Tare") {
+                        bluetooth.tare()
+                    }
+                    Spacer()
+                    if let last = bluetooth.data.last {
+                        Text("\(String(format: "%.1f", last)) kg")
+                            .font(.title)
+                    }
+                    if let maxLoad = bluetooth.maxLoad {
+                        Text("\(String(format: "%.1f", maxLoad)) kg")
+                            .font(.title)
+                            .foregroundColor(Color(.systemOrange))
                     }
                 }
-                .onDelete(perform: deleteItems)
+                
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            if bluetooth.data.isEmpty {
+                ZStack {
+                    Color(.secondarySystemBackground)
+                    Text("No data")
+                        .foregroundColor(.secondary)
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            } else {
+                
+                LineChart()
+                    .data(bluetooth.data)
+                    .chartStyle(
+                        ChartStyle(
+                            backgroundColor: .white,
+                            foregroundColor: ColorGradient(.orange, .purple)
+                        )
+                    )
+                    .padding()
+                    .border(.blue)
             }
         }
+        .padding()
+        
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
+    
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
+            .previewLayout(.fixed(width: 600, height: 400))
     }
 }
