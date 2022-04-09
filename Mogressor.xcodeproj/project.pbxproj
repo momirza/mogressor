@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD2AC8B62801ACB600A30A50 /* MogressorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8B52801ACB600A30A50 /* MogressorApp.swift */; };
+		CD2AC8B82801ACB600A30A50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8B72801ACB600A30A50 /* ContentView.swift */; };
+		CD2AC8BA2801ACB700A30A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2AC8B92801ACB700A30A50 /* Assets.xcassets */; };
+		CD2AC8BD2801ACB700A30A50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2AC8BC2801ACB700A30A50 /* Preview Assets.xcassets */; };
+		CD2AC8BF2801ACB700A30A50 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8BE2801ACB700A30A50 /* Persistence.swift */; };
+		CD2AC8C22801ACB700A30A50 /* Mogressor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8C02801ACB700A30A50 /* Mogressor.xcdatamodeld */; };
+		CD2AC8CC2801ACB700A30A50 /* MogressorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8CB2801ACB700A30A50 /* MogressorTests.swift */; };
+		CD2AC8D62801ACB700A30A50 /* MogressorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8D52801ACB700A30A50 /* MogressorUITests.swift */; };
+		CD2AC8D82801ACB700A30A50 /* MogressorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AC8D72801ACB700A30A50 /* MogressorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD2AC8C82801ACB700A30A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AC8AA2801ACB600A30A50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2AC8B12801ACB600A30A50;
+			remoteInfo = Mogressor;
+		};
+		CD2AC8D22801ACB700A30A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2AC8AA2801ACB600A30A50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2AC8B12801ACB600A30A50;
+			remoteInfo = Mogressor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD2AC8B22801ACB600A30A50 /* Mogressor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mogressor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2AC8B52801ACB600A30A50 /* MogressorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogressorApp.swift; sourceTree = "<group>"; };
+		CD2AC8B72801ACB600A30A50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD2AC8B92801ACB700A30A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD2AC8BC2801ACB700A30A50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD2AC8BE2801ACB700A30A50 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CD2AC8C12801ACB700A30A50 /* Mogressor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mogressor.xcdatamodel; sourceTree = "<group>"; };
+		CD2AC8C72801ACB700A30A50 /* MogressorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MogressorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2AC8CB2801ACB700A30A50 /* MogressorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogressorTests.swift; sourceTree = "<group>"; };
+		CD2AC8D12801ACB700A30A50 /* MogressorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MogressorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2AC8D52801ACB700A30A50 /* MogressorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogressorUITests.swift; sourceTree = "<group>"; };
+		CD2AC8D72801ACB700A30A50 /* MogressorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MogressorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD2AC8AF2801ACB600A30A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2AC8C42801ACB700A30A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2AC8CE2801ACB700A30A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD2AC8A92801ACB600A30A50 = {
+			isa = PBXGroup;
+			children = (
+				CD2AC8B42801ACB600A30A50 /* Mogressor */,
+				CD2AC8CA2801ACB700A30A50 /* MogressorTests */,
+				CD2AC8D42801ACB700A30A50 /* MogressorUITests */,
+				CD2AC8B32801ACB600A30A50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD2AC8B32801ACB600A30A50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AC8B22801ACB600A30A50 /* Mogressor.app */,
+				CD2AC8C72801ACB700A30A50 /* MogressorTests.xctest */,
+				CD2AC8D12801ACB700A30A50 /* MogressorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2AC8B42801ACB600A30A50 /* Mogressor */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AC8B52801ACB600A30A50 /* MogressorApp.swift */,
+				CD2AC8B72801ACB600A30A50 /* ContentView.swift */,
+				CD2AC8B92801ACB700A30A50 /* Assets.xcassets */,
+				CD2AC8BE2801ACB700A30A50 /* Persistence.swift */,
+				CD2AC8C02801ACB700A30A50 /* Mogressor.xcdatamodeld */,
+				CD2AC8BB2801ACB700A30A50 /* Preview Content */,
+			);
+			path = Mogressor;
+			sourceTree = "<group>";
+		};
+		CD2AC8BB2801ACB700A30A50 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AC8BC2801ACB700A30A50 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD2AC8CA2801ACB700A30A50 /* MogressorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AC8CB2801ACB700A30A50 /* MogressorTests.swift */,
+			);
+			path = MogressorTests;
+			sourceTree = "<group>";
+		};
+		CD2AC8D42801ACB700A30A50 /* MogressorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2AC8D52801ACB700A30A50 /* MogressorUITests.swift */,
+				CD2AC8D72801ACB700A30A50 /* MogressorUITestsLaunchTests.swift */,
+			);
+			path = MogressorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD2AC8B12801ACB600A30A50 /* Mogressor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2AC8DB2801ACB700A30A50 /* Build configuration list for PBXNativeTarget "Mogressor" */;
+			buildPhases = (
+				CD2AC8AE2801ACB600A30A50 /* Sources */,
+				CD2AC8AF2801ACB600A30A50 /* Frameworks */,
+				CD2AC8B02801ACB600A30A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mogressor;
+			productName = Mogressor;
+			productReference = CD2AC8B22801ACB600A30A50 /* Mogressor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD2AC8C62801ACB700A30A50 /* MogressorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2AC8DE2801ACB700A30A50 /* Build configuration list for PBXNativeTarget "MogressorTests" */;
+			buildPhases = (
+				CD2AC8C32801ACB700A30A50 /* Sources */,
+				CD2AC8C42801ACB700A30A50 /* Frameworks */,
+				CD2AC8C52801ACB700A30A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2AC8C92801ACB700A30A50 /* PBXTargetDependency */,
+			);
+			name = MogressorTests;
+			productName = MogressorTests;
+			productReference = CD2AC8C72801ACB700A30A50 /* MogressorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD2AC8D02801ACB700A30A50 /* MogressorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2AC8E12801ACB700A30A50 /* Build configuration list for PBXNativeTarget "MogressorUITests" */;
+			buildPhases = (
+				CD2AC8CD2801ACB700A30A50 /* Sources */,
+				CD2AC8CE2801ACB700A30A50 /* Frameworks */,
+				CD2AC8CF2801ACB700A30A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2AC8D32801ACB700A30A50 /* PBXTargetDependency */,
+			);
+			name = MogressorUITests;
+			productName = MogressorUITests;
+			productReference = CD2AC8D12801ACB700A30A50 /* MogressorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD2AC8AA2801ACB600A30A50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CD2AC8B12801ACB600A30A50 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					CD2AC8C62801ACB700A30A50 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CD2AC8B12801ACB600A30A50;
+					};
+					CD2AC8D02801ACB700A30A50 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = CD2AC8B12801ACB600A30A50;
+					};
+				};
+			};
+			buildConfigurationList = CD2AC8AD2801ACB600A30A50 /* Build configuration list for PBXProject "Mogressor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD2AC8A92801ACB600A30A50;
+			productRefGroup = CD2AC8B32801ACB600A30A50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD2AC8B12801ACB600A30A50 /* Mogressor */,
+				CD2AC8C62801ACB700A30A50 /* MogressorTests */,
+				CD2AC8D02801ACB700A30A50 /* MogressorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD2AC8B02801ACB600A30A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2AC8BD2801ACB700A30A50 /* Preview Assets.xcassets in Resources */,
+				CD2AC8BA2801ACB700A30A50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2AC8C52801ACB700A30A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2AC8CF2801ACB700A30A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2AC8AE2801ACB600A30A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2AC8BF2801ACB700A30A50 /* Persistence.swift in Sources */,
+				CD2AC8B82801ACB600A30A50 /* ContentView.swift in Sources */,
+				CD2AC8B62801ACB600A30A50 /* MogressorApp.swift in Sources */,
+				CD2AC8C22801ACB700A30A50 /* Mogressor.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2AC8C32801ACB700A30A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2AC8CC2801ACB700A30A50 /* MogressorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2AC8CD2801ACB700A30A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2AC8D82801ACB700A30A50 /* MogressorUITestsLaunchTests.swift in Sources */,
+				CD2AC8D62801ACB700A30A50 /* MogressorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD2AC8C92801ACB700A30A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2AC8B12801ACB600A30A50 /* Mogressor */;
+			targetProxy = CD2AC8C82801ACB700A30A50 /* PBXContainerItemProxy */;
+		};
+		CD2AC8D32801ACB700A30A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2AC8B12801ACB600A30A50 /* Mogressor */;
+			targetProxy = CD2AC8D22801ACB700A30A50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD2AC8D92801ACB700A30A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD2AC8DA2801ACB700A30A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD2AC8DC2801ACB700A30A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mogressor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mo.mirza.Mogressor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD2AC8DD2801ACB700A30A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mogressor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mo.mirza.Mogressor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD2AC8DF2801ACB700A30A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mo.mirza.MogressorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mogressor.app/Mogressor";
+			};
+			name = Debug;
+		};
+		CD2AC8E02801ACB700A30A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mo.mirza.MogressorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mogressor.app/Mogressor";
+			};
+			name = Release;
+		};
+		CD2AC8E22801ACB700A30A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mo.mirza.MogressorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mogressor;
+			};
+			name = Debug;
+		};
+		CD2AC8E32801ACB700A30A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mo.mirza.MogressorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mogressor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD2AC8AD2801ACB600A30A50 /* Build configuration list for PBXProject "Mogressor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2AC8D92801ACB700A30A50 /* Debug */,
+				CD2AC8DA2801ACB700A30A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2AC8DB2801ACB700A30A50 /* Build configuration list for PBXNativeTarget "Mogressor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2AC8DC2801ACB700A30A50 /* Debug */,
+				CD2AC8DD2801ACB700A30A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2AC8DE2801ACB700A30A50 /* Build configuration list for PBXNativeTarget "MogressorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2AC8DF2801ACB700A30A50 /* Debug */,
+				CD2AC8E02801ACB700A30A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2AC8E12801ACB700A30A50 /* Build configuration list for PBXNativeTarget "MogressorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2AC8E22801ACB700A30A50 /* Debug */,
+				CD2AC8E32801ACB700A30A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD2AC8C02801ACB700A30A50 /* Mogressor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD2AC8C12801ACB700A30A50 /* Mogressor.xcdatamodel */,
+			);
+			currentVersion = CD2AC8C12801ACB700A30A50 /* Mogressor.xcdatamodel */;
+			path = Mogressor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD2AC8AA2801ACB600A30A50 /* Project object */;
+}
